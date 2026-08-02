@@ -1,0 +1,66 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(315deg, #003e90 0.000%, #003e90 4.762%, #004698 calc(4.762% + 1px), #004698 9.524%, #004f9f calc(9.524% + 1px), #004f9f 14.286%, #0059a6 calc(14.286% + 1px), #0059a6 19.048%, #0363ac calc(19.048% + 1px), #0363ac 23.810%, #086eb2 calc(23.810% + 1px), #086eb2 28.571%, #0e79b7 calc(28.571% + 1px), #0e79b7 33.333%, #1584bc calc(33.333% + 1px), #1584bc 38.095%, #1e8fc0 calc(38.095% + 1px), #1e8fc0 42.857%, #2799c4 calc(42.857% + 1px), #2799c4 47.619%, #31a3c7 calc(47.619% + 1px), #31a3c7 52.381%, #3cadca calc(52.381% + 1px), #3cadca 57.143%, #47b5cc calc(57.143% + 1px), #47b5cc 61.905%, #52bdce calc(61.905% + 1px), #52bdce 66.667%, #5dc3cf calc(66.667% + 1px), #5dc3cf 71.429%, #68c8cf calc(71.429% + 1px), #68c8cf 76.190%, #72cbcf calc(76.190% + 1px), #72cbcf 80.952%, #7ccecf calc(80.952% + 1px), #7ccecf 85.714%, #85cece calc(85.714% + 1px), #85cece 90.476%, #8dcdcc calc(90.476% + 1px), #8dcdcc 95.238%, #94cbca calc(95.238% + 1px) 100.000%);
+}
+
+#music-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+#song-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#song-name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#music-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#music-buttons i {
+    margin: 10px;
+}
+
+#slider-song {
+    appearance: none;
+    width: 300px;
+    height: 5px;
+    background: repeating-linear-gradient(45deg, #31a3c7, rgb(0, 55, 255));
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#slider-song::-webkit-slider-thumb {
+    appearance: none;
+    background: rgb(0, 132, 255);
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
